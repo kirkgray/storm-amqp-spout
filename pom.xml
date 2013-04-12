@@ -24,9 +24,9 @@
     </licenses>
 
     <scm>
-        <connection>scm:git:git@github.com:Xorlev/storm-amqp-spout.git</connection>
-        <url>http://github.com/Xorlev/storm-amqp-spout</url>
-        <developerConnection>scm:git:git@github.com:Xorlev/storm-amqp-spout.git</developerConnection>
+        <connection>scm:git:git@github.com:kirkgray/storm-amqp-spout.git</connection>
+        <url>http://github.com/kirkgray/storm-amqp-spout</url>
+        <developerConnection>scm:git:git@github.com:kirkgray/storm-amqp-spout.git</developerConnection>
         <tag>HEAD</tag>
     </scm>
 
@@ -46,12 +46,13 @@
     </repositories>
 
     <dependencies>
+        
         <dependency>
-            <groupId>storm</groupId>
-            <artifactId>storm</artifactId>
-            <version>0.8.2</version>
-            <scope>provided</scope>
-        </dependency>
+		  <groupId>storm</groupId>
+		  <artifactId>storm</artifactId>
+		  <version>0.8.2</version>
+		</dependency>
+        
         <dependency>
             <groupId>com.rabbitmq</groupId>
             <artifactId>amqp-client</artifactId>

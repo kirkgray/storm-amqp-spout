@@ -101,26 +101,26 @@ public class AMQPSpout implements IRichSpout {
      */
     public static String ERROR_STREAM_NAME = "error-stream";
 
-    private final String amqpHost;
-    private final int amqpPort;
-    private final String amqpUsername;
-    private final String amqpPassword;
-    private final String amqpVhost;
-    private final boolean requeueOnFail;
+    protected final String amqpHost;
+    protected final int amqpPort;
+    protected final String amqpUsername;
+    protected final String amqpPassword;
+    protected final String amqpVhost;
+    protected final boolean requeueOnFail;
 
-    private final QueueDeclaration queueDeclaration;
+    protected final QueueDeclaration queueDeclaration;
 
-    private final Scheme serialisationScheme;
+    protected final Scheme serialisationScheme;
 
-    private transient boolean spoutActive = true;
-    private transient Connection amqpConnection;
-    private transient Channel amqpChannel;
-    private transient QueueingConsumer amqpConsumer;
-    private transient String amqpConsumerTag;
+    protected transient boolean spoutActive = true;
+    protected transient Connection amqpConnection;
+    protected transient Channel amqpChannel;
+    protected transient QueueingConsumer amqpConsumer;
+    protected transient String amqpConsumerTag;
 
-    private SpoutOutputCollector collector;
+    protected SpoutOutputCollector collector;
 
-    private int prefetchCount;
+    protected int prefetchCount;
 
 
 
@@ -344,7 +344,7 @@ public class AMQPSpout implements IRichSpout {
     }
 
 
-    private void setupAMQP() throws IOException {
+    protected void setupAMQP() throws IOException {
         final int prefetchCount = this.prefetchCount;
 
         final ConnectionFactory connectionFactory = new ConnectionFactory();
