@@ -91,7 +91,7 @@ This will probably be made configurable in a future release.
 
 ## Compatibility ##
 
-AMQPSpout has been tested with RabbitMQ 2.3.1, 2.6.1 and 2.7.0.  It should probably work with other
+AMQPSpout has been tested with RabbitMQ 2.3.1, 2.6.1, 2.7.0, 2.8.2, and 3.0.2  It should probably work with other
 versions and other AMQP brokers.
 
 
